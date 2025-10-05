@@ -1,0 +1,63 @@
+{% extends "@Contao/content_element/_base.html.twig" %}
+
+{% block headline %}
+    {% if headline.text %}
+        {% include '@Contao/component/_headline.html.twig' with { headline: headline } %}
+    {% endif %}
+{% endblock %}
+
+
+{% block content %}
+
+    {% if not as_editor_view %}
+
+        <div class="content-route">
+
+            <form onsubmit="calculateRoute(event)" target="_blank">
+                <div class="formbody">
+                    <div class="widget widget-text">
+                        <label for="start" {% if class_start_label %}class="{{ class_start_label }}"{% endif %}>Meine Startadresse:</label>
+                        <input {% if class_start_input %}class="{{ class_start_input }}"{% endif %}
+                            type="text" 
+                            id="start" 
+                            name="start" 
+                            required 
+                        />
+                    </div>
+                    <input type="hidden" id="destination" name="destination" value="{{ route_lat|raw }}, {{ route_long|raw }}" /> 
+
+                    <div class="widget widget-submit">
+                        <button class="submit{% if class_button %} {{ class_button }}{% endif %}" type="submit">
+                            {% if route_send is defined and route_send is not empty %}
+                            {{ route_send }}
+                            {% else %}
+                            Route planen
+                            {% endif %}
+                        </button>
+                    </div>    
+                    
+                    <label class="widget widget-explanation explanation">
+                        <small>
+                        {% if route_info is defined and route_info is not empty %}
+                        {{ route_info }}
+                        {% else %}
+                        Sie werden zu OpenStreetMap weitergeleitet
+                        {% endif %}
+                        </small>
+                    </label>
+                </div>
+            </form> 
+
+        </div>
+
+        {% block script %}
+            <script src="{{ asset('bundles/berecontcontaocalcroute/route.js') ~ '?v=' ~ date().timestamp }}" defer></script>
+        {% endblock %}
+
+    {% else %}
+        <p>###Routenplaner###</p>
+    {% endif %}
+
+{% endblock %}
+
+

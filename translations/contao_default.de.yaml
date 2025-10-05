@@ -1,0 +1,31 @@
+CTE:
+    route_element:
+        - Route berechnen
+        - Erzeugt ein Inhaltselement für die Anfahrtsroute
+
+tl_content:
+    route_legend_content: Einstellungen
+    route_lat:
+        - Latitude
+        - Geben Sie die geographische Breite für das Ziel ein. z.B. 48.665780
+    route_long:
+        - Longitude
+        - Geben Sie die geographische Länge für das Ziel ein. z.B. 15.663647
+    route_start:
+        - Startadresse
+        - Geben Sie die Bezeichnung für das Feld zur Eingabe der Startadresse ein.
+    route_send:
+        - Absendeknopf
+        - Geben Sie die Bezeichnung für den Absendeknopf ein. 
+    route_info:
+        - Zusatzinformation
+        - Wird zusätzlich ausgegeben, um darauf hinzuweisen, dass man extern weitergeleitet wird.   
+    class_start_input:
+        - Klasse &lt;input&gt; für Startadresse
+        - Hier können Sie eine oder mehrere CSS Klassen für &lt;input&gt; eingeben.
+    class_start_label:
+        - Klasse &lt;label&gt; für Startadresse
+        - Hier können Sie eine oder mehrere CSS Klassen für &lt;label&gt; eingeben.
+    class_button:
+        - Klasse für &lt;button&gt; für den Absendeknopf
+        - Hier können Sie eine oder mehrere CSS Klassen für lt;button&gt; eingeben.

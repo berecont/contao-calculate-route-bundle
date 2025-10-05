@@ -1,0 +1,30 @@
+{
+    "name": "berecont/contao-calculate-route-bundle",
+    "description": "Tdfafdad",
+    "license": "MIT",
+    "version": "1.0.0",
+    "type": "contao-bundle",
+    "authors": [
+        {
+            "name": "Bernhard Renner",
+            "email": "info@berecont.at",
+            "homepage": "https://berecont.at",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "email": "info@berecont.at"
+    },
+    "require": {
+        "php": ">=8.2",
+        "contao/core-bundle": "^5.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Berecont\\ContaoCalcrouteBundle\\": "src/"
+        }
+    },
+    "extra": {
+        "contao-manager-plugin": "Berecont\\ContaoCalcrouteBundle\\ContaoManager\\Plugin"
+    }
+}

@@ -1,0 +1,30 @@
+CTE:
+    route_element:
+        - Calculate Route
+        - Creates a content element for route directions
+
+tl_content:
+    route_lat:
+        - Latitude
+        - Enter the geographical target latitude, e.g. 48.665780
+    route_long:
+        - Longitude
+        - Enter the geographical target longitude, e.g. 15.663647
+    route_start:
+        - Starting Address
+        - Enter the label for the starting address input field.
+    route_send:
+        - Submit Button
+        - Enter the label for the submit button.
+    route_info:
+        - Additional information
+        - Displayed additionally to indicate that an external redirect is taking place.        
+    class_start_input:
+        - Class for Starting Address Input
+        - You can enter one or more classes for the input tag here.
+    class_start_label:
+        - Class for Starting Address Label
+        - You can enter one or more classes for the label tag here.
+    class_button:
+        - Class for submit-button
+        - You can enter one or more classes for the submit button.

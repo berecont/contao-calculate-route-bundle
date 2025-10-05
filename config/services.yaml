@@ -1,0 +1,8 @@
+services:
+    _defaults:
+        autowire: true
+        autoconfigure: true
+
+    Berecont\ContaoCalcrouteBundle\:
+        resource: ../src
+        exclude: ../src/{ContaoManager,BerecontContaoCalcrouteBundle.php}
